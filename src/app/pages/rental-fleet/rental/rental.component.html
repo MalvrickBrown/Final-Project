@@ -1,0 +1,26 @@
+<div class="rentalContainer">
+    <div class="rentalBox">
+        <div class="ImgBoxOne">
+            <img id="mainImg" src="http://localhost:8888/uploads/{{rental['img']}}" appMyHighLight alt="" >
+        </div>
+
+        <div class="showBox">
+            <div class="ImgBoxTwo activeImg" ><img src="http://localhost:8888/uploads/{{rental['img2']}}" appMyHighLight alt="" ></div>
+            <div class="ImgBoxTwo"><img src="http://localhost:8888/uploads/{{rental['img3']}}" appMyHighLight alt="" ></div>
+            <div class="ImgBoxTwo"><img src="http://localhost:8888/uploads/{{rental['img4']}}" appMyHighLight alt="" ></div>
+            <div class="ImgBoxTwo"><img src="http://localhost:8888/uploads/{{rental['img5']}}" appMyHighLight alt="" ></div>
+        </div>
+    </div>
+    <div class="unitInformation" >
+        <h1>{{rental['make']}}</h1>
+        <h1>{{rental['model']}}</h1>
+        <h1>{{rental['type']}}</h1>
+        <br>
+        <a routerLink="/addReservation/{{rental['id']}}" *ngIf="rental['status'] =='available' " ><h2>Book this Rental</h2></a>
+        <a  *ngIf="rental['status'] !='available' " ><h2>CURRENTLY UNAVAILABLE</h2></a>
+        <h4>
+            Note: <br>
+            Any Rental Booked that isn't picked up by *your requested date can be reserved by another client.
+        </h4>
+    </div>
+</div>

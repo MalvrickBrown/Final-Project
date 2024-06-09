@@ -1,0 +1,24 @@
+.reservationContainer{
+    width: 100%;
+    height: auto fit-content;
+}
+.resBoxMain{
+    width: 80%;
+    height: auto fit-content;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+table,tr,td{
+    font-size: 22px;
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 0 auto;
+    /* width: 100%; */
+}
+.info{
+    width: 20%;
+    height: 15vh;
+}

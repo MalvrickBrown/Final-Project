@@ -1,0 +1,187 @@
+.fleet-Container{
+    width: 100%;
+    height: auto fit-content;
+    /* height: 225vh; */
+}
+.hero-img{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
+.hero-img img{
+    width: 30%;
+    height: 50vh;
+}
+.header{
+    width: 100%;
+    text-align: center;
+    background-color: #FFF2D7;
+    padding: 10px;
+    font-size: 18px;
+}
+.sectionOne{
+    display: flex;
+    justify-content: center;
+    height: auto fit-content;
+}
+.fleet{
+    width: 80%;
+    /* border: 1px solid red; */
+    height: auto fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F6F5F2;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+
+/* deleted 'A' behind 'card' */
+.card {
+    width: 30%;
+    height: 49vh;
+    /* border: 1px solid #000; */
+    color: #fff;
+    border-radius: 20px;
+    background-image: url('https://t4.ftcdn.net/jpg/04/99/16/71/360_F_499167136_E58Feh6gtcophjpxUrk08DNky7HK3chH.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1vh;
+    /* transition: 3.6s; */
+}
+
+.card:hover{
+    /* width: 32%; */
+    /* border: 5px solid red; */
+    background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(0,176,255,1) 74%);
+    transition: 3s;
+
+}
+.img-Container{
+    width: 100%;
+    height: 30vh;
+    /* border: 1px solid red; */
+
+}
+.img-Container img{
+    width: 100%;
+    height: 30vh;
+}
+.info{
+    width: 100%;
+    height: 12vh;
+    padding: 20px;
+    /* border: 1px solid #fff; */
+    text-align: center;
+}
+.infoTwo{
+    width: 100%;
+    height: 6vh;
+    padding: 10px;
+    /* border: 1px solid #fff; */
+    text-align: center;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    opacity: 0.8;
+}
+
+
+/* Second Section css begins here. */
+.sectionTwo{
+    width: 100%;
+    /* border: 1px solid blue; */
+    height: 120vh;
+}
+.subHeadingBox{
+    display: flex;
+    justify-content: center;
+}
+.subHeading{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    background-color: #F6F5F2;
+}
+.insuranceHeader{
+    width: 50%;
+    height: 40vh;
+    /* border: 1px solid red; */
+}
+.insuranceHeader h1{
+    font-size: 45px;
+    padding: 20px;
+}
+.insuranceHeader h4{
+    padding: 20px;
+}
+.insuranceHeaderImg{
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+}
+.insuranceHeaderImg img{
+    width: 70%;
+    height: 40vh;
+    padding: 20px;
+}
+/* Insurance Details */
+.insuranceBox{
+    /* border: 1px solid rgb(29, 14, 14); */
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thirdParty{
+    width: 20%;
+    height: 30vh;
+    /* border: 1px solid blueviolet; */
+    font-size: 17px;
+    text-align: center;
+    padding: 60px;
+    line-height: 1.5;
+}
+.thirdPartyImg{
+    width: 20%;
+    height: 30vh;
+    /* border: 1px solid blueviolet; */
+}
+.thirdPartyImg img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+.damageWaiverImg{
+    width: 20%;
+    height: 20vh;
+    /* border: 1px solid red; */
+}
+.damageWaiverImg img{
+    width: 100%;
+    height: 30vh;
+    /* border: 1px solid red; */
+
+}
+.damageWaiver{
+    width: 20%;
+    height: 20vh;
+    font-size: 17px;
+    text-align: center;
+    padding: 50px;
+    line-height: 1.5;
+    /* border: 1px solid red; */
+}

@@ -1,0 +1,16 @@
+<div class="FormContainer">
+    <div class="formBox"> 
+        <form (ngSubmit)="cancelReservation(reservationForm)" #reservationForm="ngForm">
+
+            <input type="text" ngModel readonly name="first_name" placeholder="first_name" >
+            <input type="text" ngModel readonly name="last_name" >
+            <input type="text" ngModel readonly name="license_number" >
+            <input type="text" ngModel readonly name="phone_number" >
+            
+            <input type="date" ngModel readonly name="start_date" >
+            <input type="date" ngModel readonly name="end_date" >
+            <h2> {{reservation['first_name']}} </h2>
+            <input type="submit" value="Cancel Booking" >
+        </form> 
+    </div>
+</div>

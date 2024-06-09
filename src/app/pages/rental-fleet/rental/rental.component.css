@@ -1,0 +1,43 @@
+.rentalContainer{
+    width: 100%;
+    height: 100vh;
+}
+.rentalBox{
+    width: 70%;
+    height: 68vh;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* border: 1px solid ; */
+    display: flex;
+    padding: 8px;
+    background-color: #FFF2D7;
+}
+.ImgBoxOne{
+   width: 80%;
+   height: 65vh;
+   margin-top: 4px;
+}
+.ImgBoxOne img{
+    width: 100%;
+    height: 65vh;
+}
+.showBox{
+    width: 20%;
+    height: 65vh;
+}
+.ImgBoxTwo{
+    width: 100%;
+    height: 16.25vh;
+    margin: 2px;
+}
+.ImgBoxTwo img{
+    width: 100%;
+    height: 16.25vh;
+}
+.unitInformation{
+    width: 70%;
+    height: 25vh;
+    background-color: #F6F5F2;
+    margin: 0 auto;
+    padding-left: 2vh;
+}

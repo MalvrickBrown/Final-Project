@@ -1,0 +1,17 @@
+<div class="registerContainer">
+    <div class="formBox">
+        <form (ngSubmit)="newUser(registerForm)" #registerForm="ngForm"> 
+
+            <input type="text" ngModel name="first_nm" placeholder="First Name">
+            <input type="text" ngModel name="last_nm" placeholder="Last Name">
+            <input type="email" ngModel name="email" placeholder="Email">
+            <input type="password" ngModel name="password" placeholder="Password">    
+            <input type="text" ngModel name="license_nbr" placeholder="License Number">
+            <input type="text" ngModel name="phone_number" placeholder="Phone Number">
+            <input class="submit" type="submit" value="Register"> 
+        </form>
+    </div>
+    <div class="sideImg">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2024-kia-sorento-103-6554e5ef0b819.jpg?crop=0.549xw:0.826xh;0.238xw,0.148xh&resize=1200:*" alt="">
+    </div>
+</div>

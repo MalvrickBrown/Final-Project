@@ -1,0 +1,16 @@
+<div class="FormContainer">
+    <div class="formBox">
+        <form (ngSubmit)="deleteRental(rentalForm)" #rentalForm="ngForm">
+            <input type="text" ngModel readonly name="make" placeholder="Vehicle Make">
+            <input type="text" ngModel readonly name="model" placeholder="Vehicle Model">
+            <input type="text" ngModel readonly name="type" placeholder="Vehicle Type">
+            <input type="text" ngModel readonly name="daily_cost" placeholder="Daily Cost">
+            <input type="text" ngModel readonly name="weekly_cost" placeholder="Weekly Cost">
+            <input type="text" ngModel readonly name="status" placeholder="Status">
+            <input type="submit" placeholder="Add Vehicle">
+        </form>
+    </div>
+    <div class="sideImg">
+        <img src="https://cdn-icons-png.flaticon.com/512/2734/2734231.png" alt="">
+    </div>
+</div>

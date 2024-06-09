@@ -1,0 +1,30 @@
+<div class="createReservationContainer">
+    <div class="formContainer">
+        <form (ngSubmit)="bookingRental(rentalForm)" #rentalForm="ngForm">
+            
+            <h3>{{rentals['make']}}  {{rentals['model']}}</h3>
+            <br>
+            <h3>
+                First Name: {{users['first_nm']}}  <br> 
+                Last Name: {{users['last_nm']}}
+            </h3>
+            <br>
+            <h3>
+                Drivers License Number: {{users['license_nbr']}}  <br>
+                Contact Number: {{users['phone_number']}}
+            </h3>
+            <br>
+        
+            <input type="text" ngModel name="id" value="" hidden >
+            
+            <br><br>
+                
+            <input type="date" ngModel name="start_date" placeholder="From"><br><br>
+        
+            <input type="date" ngModel name="end_date" placeholder="To"><br><br>
+        
+            <input type="submit" value="Book" class="btn">
+        </form>
+        
+    </div>
+</div>

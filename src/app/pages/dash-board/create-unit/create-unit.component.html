@@ -1,0 +1,36 @@
+<div class="FormContainer">
+    <div class="formBox">
+        <form #rentalForm>
+            <input type="text" ngModel name="make" placeholder="Vehicle Make">
+            <input type="text" ngModel name="model" placeholder="Vehicle Model">
+            <select name="type" ngModel>
+                <option name="" value="">Select</option>
+                <option name="type" ngModel value="Sedan">Sedan</option>
+                <option name="type" ngModel value="Wagon">Wagon</option>
+                <option name="type" ngModel value="Sport">Sport</option>
+                <option name="type" ngModel value="SUV">SUV</option>
+                <option name="type" ngModel value="Convertible">Convertible</option>
+                <option name="type" ngModel value="Luxury">Luxury</option>
+                <option name="type" ngModel value="Pickups">Pickups</option>
+            </select>
+            <input type="text" ngModel name="daily_cost" placeholder="Daily Cost">
+            <input type="text" ngModel name="weekly_cost" placeholder="Weekly Cost">
+            <select name="status" ngModel>
+                <option value="">Select One</option>
+                <option name="status" value="available">Available</option>
+                <option name="status" value="not-available">Not-Available</option>
+            </select>
+            <input type="file" ngModel name="img" placeholder="Image One">
+            <input type="file" ngModel name="img2" placeholder="Image Two">
+            <input type="file" ngModel name="img3" placeholder="Image Three">
+            <input type="file" ngModel name="img4" placeholder="Image Four">
+            <input type="file" ngModel name="img5" placeholder="Image Five">
+            <input type="text" ngModel name="license_plate_nbr" placeholder="license_plate_nbr">
+
+            <input type="submit" value="Add to Fleet" (click)="submitForm(rentalForm)">
+        </form>
+    </div>
+    <div class="sideImg">
+        <img src="https://cdn-icons-png.flaticon.com/512/2734/2734227.png" alt="">
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="reservationContainer">
+    <div class="resBoxMain">
+        <table>
+            <thead>
+                <tr>
+                    <td>User ID</td>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Rental Id</td>
+                    <td>License Number</td>
+                    <td>Phone Number</td>
+                    <td>Start Date</td>
+                    <td>End Date</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let reservation of reservations">
+                    <td>{{reservation['user_id']}}</td>
+                    <td>{{reservation['first_name']}} </td>
+                    <td>{{reservation['last_name']}} </td>
+                    <td>{{reservation['rental_id']}} </td>
+                    <td>{{reservation['license_number']}} </td>
+                    <td>{{reservation['phone_nbr']}} </td>
+                    <td>{{reservation['start_date']}} </td>
+                    <td>{{reservation['end_date']}} </td>
+                    <td>
+                        <a routerLink="/viewReservation/{{reservation['id']}}">View</a> | &nbsp; |
+                        <a routerLink="/updateReservation/{{reservation['id']}}">Update</a> | &nbsp; |
+                        <a routerLink="/removeReservation/{{reservation['id']}}">Cancel</a> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

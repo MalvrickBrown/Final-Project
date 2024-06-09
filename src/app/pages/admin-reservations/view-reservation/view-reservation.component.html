@@ -1,0 +1,26 @@
+<div class="FormContainer">
+    <div class="formBox">
+        <form >
+            
+            <h3>Name: &nbsp;
+                {{reservation['first_name']}}
+                {{reservation['last_name']}}
+            </h3>
+            <br>
+            <h3>
+                Rental ID: {{reservation['rental_id']}} <br>
+                
+                <br>
+                Drivers License Number: &nbsp; {{reservation['license_number']}} <br>
+                <br>
+                Phone Number: &nbsp;{{reservation['phone_nbr']}}
+            </h3>
+            <br>
+            <h3>
+                Start Date: &nbsp;{{reservation['start_date']}}<br>
+                <br>
+                End Date: &nbsp;{{reservation['end_date']}}
+            </h3>
+        </form>
+    </div>
+</div>

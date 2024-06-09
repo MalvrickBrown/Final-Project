@@ -1,0 +1,25 @@
+<div class="userLoginContainer">
+    <div class="loginContainer">
+        <div class="loginBox">
+            <div class="formbox">
+                <div>
+                    <form (ngSubmit)="onLogin2(loginForm)" #loginForm="ngForm">
+                        <p 
+                        style="color: red;"
+                        *ngIf="hasError">
+                           {{errMsg}} 
+                        </p>
+                        <input type="email" placeholder="Enter Your Username" id="email" name="email" ngModel>
+
+                        <input type="password" placeholder="Enter Your Password" id="password" name="password" ngModel>
+
+                        <input class="submit" type="submit" value="Login">
+                    </form>
+                </div>
+            </div>
+            <div class="imgBox">
+                <img src="https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/wp-content/uploads/2018/01/2018-Kia-Stinger-20t-AWD-102.jpg?crop=0.628xw:1.00xh;0.218xw,0&resize=640:*" alt="">
+            </div>
+        </div>
+    </div>
+</div>

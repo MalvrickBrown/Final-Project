@@ -1,0 +1,22 @@
+<div class="FormContainer">
+    <div class="formBox">
+        <form (ngSubmit)="updateReservation(userForm)" #userForm="ngForm">
+            
+            <h3>
+                First Name: {{reservation['first_name']}}  <br> 
+                Last Name: {{reservation['last_name']}}
+            </h3>
+            <br>
+            <h3>
+                Drivers License Number: {{reservation['license_number']}}  <br>
+                Contact Number: {{reservation['phone_nbr']}}
+            </h3>
+            <br>
+            <input type="date" ngModel name="start_date" >
+            <br>
+            <input type="date" ngModel name="end_date" >
+
+            <input type="submit" value="Update" >
+        </form>
+    </div>
+</div>

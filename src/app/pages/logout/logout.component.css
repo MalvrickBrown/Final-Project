@@ -1,0 +1,65 @@
+.userLoginContainer{
+    width: 100%;
+    height: 82vh;
+}
+.loginContainer{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.loginBox{
+    border-radius: 20px;
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    background: rgb(2,0,36);
+    background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(0,176,255,1) 74%);
+}
+.formbox{
+    width: 50%;
+    height: 60vh;
+    /* border: 1px solid blue; */
+    background-color: #FFF2D7;
+    /* padding: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.formbox div{
+    /* border: 1px solid peru; */
+    padding: 20px;
+    background-color: #F6F5F2;
+}
+.imgBox{
+    width: 50%;
+    height: 60vh;
+    /* border: 1px solid yellow; */
+}
+.imgBox img{
+    width: 100%;
+    height: 60vh;
+}
+input{
+    width: 100%;
+    font-size: 24px;
+    padding: 12px 12px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.icon{
+    width: 10%;
+}
+.submit{
+    background: none;
+    /* border: none; */
+}
+.submit:hover{
+    background-color: #A0DEFF;
+}
+
+

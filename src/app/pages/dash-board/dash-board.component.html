@@ -1,0 +1,50 @@
+<div class="dashBoard-Container">
+    <div class="dashText">
+        <p>
+            Please refer to the user manual for detailed instructions and guidance on how to use the product effectively, 
+            there will be relevant details that will assist you in maximizing the functionality of the product.
+            <br>
+            <br>
+            If you encounter any difficulties or have questions about the product's features,
+            the user manual is the best resource to consult for comprehensive assistance or means 
+            of reaching out for further instruction.
+        </p>
+    </div>
+    <div class="userReservations"><a routerLink="/User-Reservations">USER RESERVATIONS</a></div>
+    <div class="addNew"><a routerLink="/Create-New-Unit">Add new unit to Fleet</a></div>
+    <div class="displayUnits" >
+
+        <div class="dashboard" *ngFor="let rental of rentals" >
+
+            <div class="item">
+                <div class="unitImg">
+                    <img src="http://localhost:8888/uploads/{{rental['img']}}" alt="">
+                </div>
+                <div class="unitDetails">
+                    <div class="infoBox">
+                        <h1>Make: {{rental['make']}}</h1>
+                        <h2>Model: {{rental['model']}}</h2>
+                        <h2>Type: {{rental['type']}}</h2>
+                        <h2>Daily Cost: {{rental['daily_cost']}} </h2>
+                        <h2>Weekly Cost: {{rental['weekly_cost']}}</h2>
+                        <h2>Current Status: {{rental['status']}}</h2>
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="actionBox">
+                        <a routerLink="/Update-Unit/{{rental['id']}}">Update |</a> <br>
+                        <hr>  <hr>
+                        <a routerLink="/Remove-Unit/{{rental['id']}}">| Remove</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="otherImgContainer">
+                <div class="otherImg"><img src="http://localhost:8888/uploads/{{rental['img2']}}" alt=""></div>
+                <div class="otherImg"><img src="http://localhost:8888/uploads/{{rental['img3']}}" alt=""></div>
+                <div class="otherImg"><img src="http://localhost:8888/uploads/{{rental['img4']}}" alt=""></div>
+                <div class="otherImg"><img src="http://localhost:8888/uploads/{{rental['img5']}}" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>

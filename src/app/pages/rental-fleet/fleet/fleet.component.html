@@ -1,0 +1,56 @@
+<div class="fleet-Container">
+    <div class="header">
+        <h2>Select from our wide range of vehicles</h2>
+        
+    </div>
+    <div class="sectionOne">
+        <div class="fleet">
+            <!-- Data from rental table -->
+            <a routerLink="/rental/{{rental['id']}}" class="card" *ngFor="let rental of rentals">
+                <div>
+                    <div class="info">
+                        <h3> {{rental['make']}}, {{rental['model']}} </h3>
+                        <h4>or similar | {{rental['type']}} </h4>
+                        
+                    </div>
+                    <div class="img-Container"><img src="http://localhost:8888/uploads/{{rental['img2']}}" alt=""></div>
+                    <div class="infoTwo">
+                        <b><h3>{{rental['daily_cost']}} / day</h3></b> <h4>or {{rental['weekly_cost']}} (status: {{rental['status']}})</h4>
+                    </div>  
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="sectionTwo">
+        <div class="subHeadingBox">
+            <div class="subHeading">
+                <div class="insuranceHeader"><h1>Insurance & vehicle protection for On The Toll Rental Customers</h1> <br><h4>Third-party liability insurance provided under a policy issued to Turo by Travelers Excess and Surplus Lines Company.</h4></div>
+                <div class="insuranceHeaderImg"><img src="https://pngfreepic.com/wp-content/uploads/2022/04/Life-insurance-policy-illustration-Free-Vector-image.png?v=1663341843" alt=""></div>
+            </div>
+        </div>
+        
+        <div class="insuranceBox">
+            <div class="thirdParty">
+                <p>
+                    Varying levels of vehicle protection
+                    Choose from five plans, each of which offers reimbursement for car repairs up to your car’s actual cash value** in case of damage during a trip
+                 </p>
+            </div>
+            <div class="thirdPartyImg">
+                <img src="https://png.pngtree.com/png-vector/20200310/ourmid/pngtree-car-insurance-design-concept-with-umbrella-protection-png-image_2158397.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="insuranceBox">
+            <div class="damageWaiverImg">
+                <img src="https://static.vecteezy.com/system/resources/previews/015/040/575/non_2x/car-accident-icon-color-outline-vector.jpg" alt="">
+            </div>
+            <div class="damageWaiver">
+                <p>
+                    While every protection plan includes liability insurance, physical damage reimbursement, and access to 24/7 roadside assistance,**** you get to pick the plan options that make sense for you.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

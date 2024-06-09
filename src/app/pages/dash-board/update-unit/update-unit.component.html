@@ -1,0 +1,32 @@
+<div class="FormContainer">
+    <div class="formBox">
+        <form (ngSubmit)="updateRental(rentalForm)" #rentalForm="ngForm">
+            <input type="text" ngModel name="make" >
+            <input type="text" ngModel name="model" >
+            <!-- <input type="text" ngModel name="type" > -->
+            <select name="type" ngModel>
+                <option name="type" ngModel value="Sedan">Sedan</option>
+                <option name="type" ngModel value="Wagon">Wagon</option>
+                <option name="type" ngModel value="Sport">Sport</option>
+                <option name="type" ngModel value="SUV">SUV</option>
+                <option name="type" ngModel value="Convertible">Convertible</option>
+                <option name="type" ngModel value="Luxury">Luxury</option>
+                <option name="type" ngModel value="Pickups">Pickups</option>
+            </select>
+            <input type="text" ngModel name="daily_cost" >
+            <input type="text" ngModel name="weekly_cost" >
+            <!-- <input type="text" ngModel name="status" readonly> -->
+            <select name="status" ngModel>
+                <option value="">New Status</option>
+                <option name="status" ngModel value="available">Available</option>
+                <option name="status" ngModel value="not-available">Not-Available</option>
+            </select>
+
+            <input type="submit" value="Update" >
+        </form>
+    </div>
+    <div class="sideImg">
+        <img src="https://cdn-icons-png.flaticon.com/512/4133/4133322.png" alt="">
+    </div>
+</div>
+

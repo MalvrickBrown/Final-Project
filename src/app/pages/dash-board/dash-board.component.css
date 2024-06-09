@@ -1,0 +1,121 @@
+.dashBoard-Container{
+    width: 100%;
+    height: auto fit-content;
+    /* height: 380vh; */
+    background-color: #FEFAF6;
+}
+.dashText{
+    margin: 0 auto;
+    width: 60%;
+    height: 30vh;
+    /* border: 1px solid; */
+}
+.dashText p{
+    font-size: 24px;
+    text-align: center;
+    padding: 40px;
+}
+.addNew{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    background-color: #ACE1AF;
+    padding: 15px;
+}
+.addNew:hover{
+    cursor: pointer;
+    background-color: #050C9C;
+}
+.userReservations{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    background-color: #ACE1AF; 
+    padding: 15px;
+}
+
+.userReservations:hover{
+    cursor: pointer;
+    background-color: #050C9C;
+}
+.displayUnits{
+    width: 100%;
+    height: auto fit-content;
+    /* height: 80vh; */
+}
+
+.item{
+    width: 100%;
+    height: 35vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.unitImg{
+    /* border: 1px solid ; */
+    width: 30%;
+    height: 35vh;
+}
+.unitImg img{
+    width: 100%;
+    height: 35vh;
+}
+.unitDetails{
+    /* border: 1px solid ; */
+    width: 32%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoBox{
+    width: 100%;
+    height: 16.5vh;
+    /* padding: 15px; */
+}
+.actions{
+    background-color: #ACE1AF;
+    height: 35vh;
+    width: 15%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actionBox{
+    width: 100%;
+    height: 17.5vh;
+    text-align: center;
+    padding: 12px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.dashboard{
+    margin: 0 auto;
+    width: 80%;
+    height: 58vh;
+    background-color: #FFF2D7;
+    margin-bottom: 2vh;
+    /* border: 1px solid blue; */
+}
+.otherImgContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.otherImg{
+    width: 18%;
+    height: 20vh;
+    margin: 1vh;
+    /* border: 1px solid ; */
+}
+.otherImg img{
+    width: 100%;
+    height: 20vh;
+}

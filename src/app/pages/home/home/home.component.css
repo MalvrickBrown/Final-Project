@@ -1,0 +1,172 @@
+.homeContainer{
+    width: 100%;
+    height: 270vh;
+}
+.heroSection{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(0,176,255,1) 74%);
+}
+.slideShow{
+    width: 85%;
+    height: 80vh;
+    position: relative;
+}
+.slideImg{
+    width: 100%;
+    height: 80vh;
+}
+.textOnImage{
+    width: 30%;
+    height: 35vh;
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    background-color: #00000065;
+    color: #fff;
+    padding: 25px;
+}
+.slogan{
+    font-size: 50px;
+}
+.sloganTwo{
+    font-size: 25px;
+}
+
+.sectionTwo{
+    width: 100%;
+    height: 28vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.categoryBox{
+    width: 12%;
+    height: 20vh;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+    margin: 35px;
+}
+.categoryBox h2{
+    text-align: center;
+}
+.favicon{
+    width: 100%;
+    height: 16vh;
+}
+.cateImg{
+    width: 100%;
+    height: 16vh;
+}
+.browse-by-category h2{
+    background-color: #fff;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    padding: 10px;
+}
+
+.sectionThree{
+    width: 100%;
+    height: 65vh;
+    background-color: #FFF2D7;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.newlyAdded{
+    width: 27%;
+    height: 50vh;
+    background-color: #FFE0B5;
+    margin-top: 2%;
+}
+.new-added-Image img{
+    width: 100%;
+    height: 35vh;
+}
+.starIcon{
+    width: 3%;
+}
+.info-on-vehicle{
+    padding: 10px 40px;
+}
+
+/* Four Section of the Home Page */
+.sectionFour{
+    width: 100%;
+    height: 60vh;
+    background-color: #fff;
+    padding: 2% 10%;
+    display: flex;
+}
+.experience{
+    width: 50%;
+    height: 50vh;
+}
+.experience img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 5px;
+}
+
+.experience-Adventure{
+    width: 50%;
+    height: 50vh;
+    padding: 80px;
+    font-size: 20px;
+}
+
+
+/* Client Testimonials */
+.sectionFive{
+    width: 100%;
+    height: 26vh;
+    background-color: #FFF2D7;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.recentReviews{
+    width: 100%;
+    text-align: center;
+    background-color: #FFF2D7;
+    padding: 15px;
+}
+
+.reviewBox{
+    width: 25%;
+    height: 18vh;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 10px 10px #fff;
+}
+.userPFP{
+    width: 20%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE0B5;
+}
+.userPFP img{
+    width: 60%;
+    border-radius: 60px;
+}
+.userReview{
+    text-align: center;
+    width: 80%;
+    height: 18vh;
+    padding: 15px; 
+    font-size: 19px;
+    background-color: #FFE0B5;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}

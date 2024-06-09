@@ -1,0 +1,44 @@
+.footerContainer{
+    width: 100%;
+    height: 25vh;
+    background-color: #153448;
+    display: flex;
+    color: #fff;
+}
+h1{
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+hr{
+    margin-bottom: 20px;
+    color: #FF0000;
+    margin-right: 40%;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul,li{
+    font-size: 20px;
+    list-style: none;
+}
+.company{
+    width: 25%;
+    padding: 30px;
+}
+.getHelp{
+    width: 25%;
+    padding: 30px;
+}
+.onlineRecords{
+    width: 25%;
+    padding: 30px;
+}
+.contactUs{
+    width: 25%;
+    padding: 30px;
+}
+img{
+    width: 10%;
+    margin: 5px;
+}

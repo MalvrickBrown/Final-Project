@@ -1,0 +1,89 @@
+.about-us-Container{
+    width: 100%;
+    height: 160vh;
+}
+.sectionOne{
+    width: 60%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.imgBox{
+    width: 50%;
+    height: 40vh;
+    box-shadow: 20px 20px #F6F5F2;
+    margin: 30px;
+}
+.imgBox img{
+    width: 100%;
+    height: 40vh;
+}
+.textBox{
+    width: 50%;
+    height: 40vh;
+    padding: 40px;
+    /* text-align: center; */
+    box-shadow: 20px 20px #F6F5F2;
+    margin: 30px;
+    background-color: #FEFAF6;
+}
+.textBox h1{
+    font-size: 50px;
+}
+.textBox h3{
+    font-size: 24px;
+}
+
+
+.corporateHistory{
+    width: 100%;
+    height: 50vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.corporateHistoryBox{
+    width: 60%;
+    padding: 20px;
+    line-height: 1.4;
+}
+.corporateHistoryBox p{
+    font-size: 20px;
+}
+
+
+.companyMission{
+    width: 100%;
+    height: 60vh;
+    /* border: 1px solid red; */
+    background-color: #F6F5F2;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.mission{
+    width: 25%;
+    height: 35vh;
+    margin: 15px;
+    border-radius: 10px;
+}
+.mission img{
+    width: 100%;
+    height: 35vh;
+    box-shadow: 30px 30px #B5C18E;
+    border-radius: 10px;
+
+}
+
+.missionStatement{
+    width: 20%;
+    height: 30vh;
+    font-size: 24px;
+    background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(0,176,255,1) 74%);
+    color: #fff;
+    padding: 45px;
+    text-align: center;
+    margin: 25px;
+    border-radius: 10px;
+}
