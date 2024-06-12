@@ -22,3 +22,7 @@ table,tr,td{
     width: 20%;
     height: 15vh;
 }
+a{
+    color: #000;
+    text-decoration: none;
+}

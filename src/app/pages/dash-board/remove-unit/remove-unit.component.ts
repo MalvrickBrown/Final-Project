@@ -44,7 +44,7 @@ export class RemoveUnitComponent implements OnInit {
           icon: 'success',
           title: 'Successfully Removed Rental',
         });
-        this.router.navigateByUrl('/Rental-Fleet')
+        this.router.navigateByUrl('/Administrator')
       }else{
         Swal.fire({
           icon: 'error',
