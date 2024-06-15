@@ -3,22 +3,24 @@ import { ActivatedRoute } from '@angular/router';
 import { AuthService } from 'src/app/app-services/auth.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
-export class HeaderComponent implements OnInit{
-  constructor( private authService: AuthService, private route: ActivatedRoute ){}
+export class ProfileComponent implements OnInit {
+  constructor( private authService: AuthService, private route: ActivatedRoute){}
 
   users: any = [];
   id: number = 0;
   
+
   ngOnInit(): void {
-    // this.authService.logout();
-    this.fetchUserProfile();
+    this.fetchUserProfile(); //Call user profile function on request of page.
   }
 
+  // function to fetch Current Logged in user information and store it in users object
   fetchUserProfile(){
+    this.id = this.route.snapshot.params['id'];
     console.log('fetching:' + localStorage.getItem('tokenKey'))
     this.authService.getThisUser().subscribe(res =>{
       if(res['status']== 'success'){
@@ -26,5 +28,4 @@ export class HeaderComponent implements OnInit{
       }
     })
   }
-  
 }

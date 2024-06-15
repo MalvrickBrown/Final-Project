@@ -1,6 +1,6 @@
 <div class="createReservationContainer">
-    <div class="formContainer">
-        <form (ngSubmit)="bookingRental(rentalForm)" #rentalForm="ngForm">
+    <div class="formContainer" [formGroup]="form">
+        <form (ngSubmit)="bookingRental(rentalForm)" #rentalForm="ngForm" >
             
             <h3>{{rentals['make']}}  {{rentals['model']}}</h3>
             <br>
@@ -21,9 +21,11 @@
                 
             <input type="date" ngModel name="start_date" placeholder="From"><br><br>
         
-            <input type="date" ngModel name="end_date" placeholder="To"><br><br>
+            <input  type="date" ngModel name="end_date" placeholder="To"><br><br> 
         
             <input type="submit" value="Book" class="btn">
+            <!-- {{form.value | json}} --> 
+            <!-- formControlName="" --> <!-- formControlName="" USED TO STORE DATA IN OBJECT FOR .TS EMAILJS TEMPLATE-->
         </form>
         
     </div>

@@ -10,7 +10,7 @@ import { FleetComponent } from './pages/rental-fleet/fleet/fleet.component';
 import { AboutUsComponent } from './pages/about-us/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us/contact-us.component';
 import { AuthComponent } from './pages/auth/auth.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { DashBoardComponent } from './pages/dash-board/dash-board.component';
@@ -26,6 +26,7 @@ import { TokenInterceptor } from './shared/utils/token.interceptor';
 import { RemoveReservationComponent } from './pages/admin-reservations/remove-reservation/remove-reservation.component';
 import { MyHighLightDirective } from './pages/rental-fleet/rental/my-high-light.directive';
 import { ViewReservationComponent } from './pages/admin-reservations/view-reservation/view-reservation.component';
+import { ProfileComponent } from './pages/user-profile/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -50,12 +51,14 @@ import { ViewReservationComponent } from './pages/admin-reservations/view-reserv
     RemoveReservationComponent,
     MyHighLightDirective,
     ViewReservationComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi:true}

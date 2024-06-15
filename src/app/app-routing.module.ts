@@ -18,6 +18,7 @@ import { AllReservationComponent } from './pages/admin-reservations/all-reservat
 import { UpdateReservationComponent } from './pages/admin-reservations/update-reservation/update-reservation.component';
 import { RemoveReservationComponent } from './pages/admin-reservations/remove-reservation/remove-reservation.component';
 import { ViewReservationComponent } from './pages/admin-reservations/view-reservation/view-reservation.component';
+import { ProfileComponent } from './pages/user-profile/profile/profile.component';
 
 const routes: Routes = [
   {path: 'Home', title: 'Home Page', component:HomeComponent, pathMatch: 'full'},
@@ -41,7 +42,8 @@ const routes: Routes = [
   {path: 'User-Reservations', title: 'Reservations', component:AllReservationComponent, canActivate: [GuardsGuard] },
   {path: 'updateReservation/:id', title: 'Update User Reservation', component:UpdateReservationComponent},
   {path: 'removeReservation/:id', title: 'Cancel User Reservation', component:RemoveReservationComponent },
-  {path: 'viewReservation/:id', title: 'View User Reservation', component:ViewReservationComponent}
+  {path: 'viewReservation/:id', title: 'View User Reservation', component:ViewReservationComponent},
+  {path: 'userProfile/:id', title: 'User Profile', component:ProfileComponent, canActivate: [GuardsGuard]}
 ];
 
 @NgModule({
