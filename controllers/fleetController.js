@@ -144,7 +144,7 @@ const [rental] = await pool.query(sqlQuery, [id]);
     }
 }
 
-// Function that updates the availablitiy of a rental
+// Function that updates the availablitiy of a rental when booked by customer
 export const availableRental = async(req, res,_next) => {
     
     let rental = await pool.query(`
